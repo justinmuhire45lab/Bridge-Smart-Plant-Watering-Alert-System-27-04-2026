@@ -32,7 +32,7 @@ Read Soil Sensor (A0)
 
   │
   ▼
-Is value > 500?
+Is value < 500?
 
 
 
