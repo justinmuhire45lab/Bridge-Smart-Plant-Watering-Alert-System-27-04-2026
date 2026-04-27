@@ -53,24 +53,46 @@ block diagram:
 
 
 logic digram
+
+
+
                         START
+
+
+                        
   │
   ▼
 Read Soil Sensor (A0)
+
+
+
   │
   ▼
 Is value > 500?
+
+
+
   │
   ├── YES (DRY) ──►  🔴 Red LED BLINKS
   │                  🟢 Green LED OFF
   │                  ⚠️ Plant needs water!
+
+
+  
   │
   └── NO (WET) ───►  🟢 Green LED ON steady
                      🔴 Red LED OFF
                      ✅ Plant is fine!
+
+
+
+                     
   │
   ▼
 Wait 500ms
+
+
+
   │
   ▼
 REPEAT FOREVER
